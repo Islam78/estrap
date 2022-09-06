@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Save Paws</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fontawsem-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!--bootstrab link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--css page-->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <!--teesstt-->
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
+        <a class="navbar-brand" href="#"><i style=" color: #71C55D;font-size: 40px;" class="fas fa-paw"></i></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#phone">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a type="button" href="#" data-toggle="modal" data-target=".bd-example-modal-lg-2"
+                        class="nav-link">VOLUNTEER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Gallary">GALLARY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Team">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Price">DONATE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Features">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#Contact">CONTACT</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav" style="float:right">
+                <li class="nav-item">
+                    <a type="button" href="#" data-toggle="modal" data-target=".bd-example-modal-lg"
+                        class="nav-link">ADOPT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- pop up VOLUNTEER -->
+    <div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">VOLUNTEER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="form6Example1" class="form-control" />
+                                    <label class="form-label" for="form6Example1">First name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="form6Example2" class="form-control" />
+                                    <label class="form-label" for="form6Example2">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example3" class="form-control" />
+                            <label class="form-label" for="form6Example3">Company name</label>
+                        </div>
+
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example4" class="form-control" />
+                            <label class="form-label" for="form6Example4">Address</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form6Example5" class="form-control" />
+                            <label class="form-label" for="form6Example5">Email</label>
+                        </div>
+
+                        <!-- Number input -->
+                        <div class="form-outline mb-4">
+                            <input type="number" id="form6Example6" class="form-control" />
+                            <label class="form-label" for="form6Example6">Phone</label>
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                        </div>
+
+
+                        <!-- Submit button -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop up ADOPT -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ADOPT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="form6Example1" class="form-control" />
+                                    <label class="form-label" for="form6Example1">First name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="form6Example2" class="form-control" />
+                                    <label class="form-label" for="form6Example2">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example3" class="form-control" />
+                            <label class="form-label" for="form6Example3">Company name</label>
+                        </div>
+
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form6Example4" class="form-control" />
+                            <label class="form-label" for="form6Example4">Address</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form6Example5" class="form-control" />
+                            <label class="form-label" for="form6Example5">Email</label>
+                        </div>
+
+                        <!-- Number input -->
+                        <div class="form-outline mb-4">
+                            <input type="number" id="form6Example6" class="form-control" />
+                            <label class="form-label" for="form6Example6">Phone</label>
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                        </div>
+
+
+                        <!-- Submit button -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Template -->
+    <div class="Template text-center">
+        <div>
+            <div>
+                <div class="float">
+                    <div class="tap">
+                        <img class="img-fluid" id="tap" alt="Responsive image" src="images/dogsAndCat.jpg">
+                    </div>
+                </div>
+                <a class="btn btn-info">VIEW OUR ADOPTABLE ANIMALS</a>
+                <div class="test">
+                    <div class="row">
+                        <div class=" col-md-4 col-sm-4 col-xs-12">
+                            <a href="#"><i class="fas fa-dog"> Dogs</i></a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <a href="#"><i class="fas fa-cat"> Cats</i></a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <a href="#"><i class="fas fa-paw"> Animals</i></a>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fordiscount-->
+        <div class="container">
+            <div class="text">
+                <h2>How We Are Different</h2>
+                <p>Save Paws (SP) is a Egyption registered charity that dives in to help and re-home at-risk animals
+                    affected by natural disasters and climate change. We are foster-based, shelter free rescue and and
+                    provide our rescue animals loving temporary
+                    care while working endlessly to find them their fur-ever homes through a careful screening process.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img class="img-fluid" alt="Responsive image" src="images/hands.png">
+                    <div class="h5">Save Paws based</div>
+                    <p class="lead">Our animals live in a loving home environment while we get to know them and find
+                        their
+                        forever homes!</p>
+                    <a href="#"> Learn more </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img class="img-fluid" alt="Responsive image" src="images/bone.png">
+                    <div class="h5">No Animal is Hopeless</div>
+                    <p class="lead">We have a special affinity for animals with medical and physical needs,
+                        with a particular adoration for animals who have visual and hearing impairments.</p>
+                    <a href="#"> Learn more </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img class="img-fluid" alt="Responsive image" src="images/vet.png">
+                    <div class="h5">Climate Change & Natural Disasters</div>
+                    <p class="lead">We are the only animals rescue in the world focused on the impacts of climate change
+                        and
+                        natural disasters on homeless animals.</p>
+                    <a href="#"> Learn more </a>
+                </div>
+            </div>
+        </div>
+        <!--Mobile Desgin-->
+        <div id="phone" class="phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-6 col-xs-12">
+                        <img src="images/Cat-Dog.jpg" class="img-fluid" id="phoe" alt="Responsive image">
+                    </div>
+
+                    <div class="col-sm-4 col-md-6 col-xs-12">
+                        <div class="tomargin  text-left">
+                            <h2><span> HELP </span> US HELP ANIMALS </h2>
+                            <p class="lead">We couldn’t be saving as many animals without our amazing volunteers.
+                                From transport to adoption, we’re always welcoming help! Whether you’re a vet tech, a
+                                driver,
+                                a good administrator or a animals lover, get in touch and help us save animals.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-chevron-right"></i> Vet Tech</li>
+                                <li><i class="fas fa-chevron-right"></i> Driver</li>
+                                <li><i class="fas fa-chevron-right"></i> Good Administrator</li>
+                                <li><i class="fas fa-chevron-right"></i> Animals Lover</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Amazing Features-->
+        <div id="Features" class="Features">
+            <div class="container">
+                <h2>Amazing Features.<h2>
+                        <p class="lead">Integer Cursus Bibendum Augue Ac Cursus .</p>
+
+                        <div class="row">
+
+                            <div class="col-sm-4 col-md-3 col-xs-12">
+                                <img class="img-fluid" alt="Responsive image" src="images/paint-palette.svg">
+                                <h4>CREATIVE DESIGN</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-xs-12">
+                                <img class="img-fluid" alt="Responsive image" src="images/3.svg">
+                                <h4>CREATIVE DESIGN</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-xs-12">
+                                <img class="img-fluid" alt="Responsive image" src="images/6.svg">
+                                <h4>CREATIVE DESIGN</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xs-12">
+                                <img class="img-fluid" alt="Responsive image" src="images/2.svg">
+                                <h4>CREATIVE DESIGN</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4 col-md-3 col-xs-12">
+                                    <img class="img-fluid" alt="Responsive image" src="images/3.svg">
+                                    <h4>CREATIVE DESIGN</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-xs-12">
+                                    <img class="img-fluid" alt="Responsive image" src="images/4.svg">
+                                    <h4>CREATIVE DESIGN</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-xs-12">
+                                    <img class="img-fluid" alt="Responsive image" src="images/5.svg">
+                                    <h4>CREATIVE DESIGN</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                </div>
+                                <div class="col-sm-3 col-md-3 col-xs-12">
+                                    <img class="img-fluid" alt="Responsive image" src="images/6.svg">
+                                    <h4>CREATIVE DESIGN</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                    <div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <!--test-->
+
+                                <div class="uk">
+                                    <div class="10">
+                                        <div class="container">
+                                            <h1 class="animated1">
+                                                Brent
+                                            </h1>
+                                            <h1 class="animated1">
+                                                Guillermo
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--carosel-->
+
+                                <div class="galary_carosel" id="Gallary" style="margin-top: 50px;">
+                                    <div class="container">
+                                        <h2> App Gallary </h2>
+                                        <p>Integer Cursus Bibendum Augue Ac Cursus</p>
+
+                                        <div id="bs4-multi-slide-carousel" class="carousel slide" data-ride="carousel">
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col"><img src="images/doccat.JPG" class="img-fluid"
+                                                                alt="3 slide"></div>
+                                                        <div class="col"><img src="images/cat2.PNG" class="img-fluid"
+                                                                alt="2 slide"></div>
+                                                        <div class="col"><img src="images/dog2.jpg" class="img-fluid"
+                                                                alt="3 slide"></div>
+                                                        <div class="col"><img src="images/Cat-Dog.PNG" class="img-fluid"
+                                                                alt="1 slide">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col"><img src="images/cat3.PNG" class="img-fluid"
+                                                                alt="1 slide"></div>
+                                                        <div class="col"><img src="images/dog3.jfif" class="img-fluid"
+                                                                alt="2 slide"></div>
+                                                        <div class="col"><img src="images/cat4.PNG" class="img-fluid"
+                                                                alt="2 slide"></div>
+                                                        <div class="col"><img src="images/dog4.PNG" class="img-fluid"
+                                                                alt="3 slide"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+
+                                                        <div class="col"><img src="images/Dog.png"
+                                                                class="img-fluid" alt="3 slide">
+                                                        </div>
+                                                        <div class="col"><img src="images/cat5.PNG" class="img-fluid"
+                                                                alt="3 slide"></div>
+                                                        <div class="col"><img src="images/dog5.PNG" class="img-fluid"
+                                                                alt="2 slide"></div>
+                                                        <div class="col"><img src="images/Cat-Dog.PNG" class="img-fluid"
+                                                                alt="3 slide">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <script>
+                                    $('#bs4-multi-slide-carousel').carousel({
+                                        interval: 500
+                                    })
+                                </script>
+                                <!--Team Member-->
+                                <div id="Team" class="team  text-center">
+                                    <div class="container">
+
+                                        <h2>Our Team<h2>
+                                                <p>Integer Cursus Bibendum Augue Ac Cursus .</p>
+                                                <div class="row text-center">
+                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                        <img class="img-bluid" alt="Responsive image"
+                                                            src="images/team1.jpg">
+                                                    </div>
+                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                        <img class="img-bluid" alt="Responsive image"
+                                                            src="images/team2.jpg">
+                                                    </div>
+                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                        <img class="img-bluid" alt="Responsive image"
+                                                            src="images/team3.jpg">
+                                                    </div>
+                                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                                        <img class="img-bluid" alt="Responsive image"
+                                                            src="images/team4.jpg">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <!--carosel Speackers -->
+
+                                                <div class="our_speaker text-center">
+                                                    <i class="testemonial fa fa-quote-right" aria-hidden="true"></i>
+                                                    <div id="carouselExampleControls" class="carousel slide"
+                                                        data-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <h2 class="h1 text-center">Our Users Speack Volumes Us
+                                                                    </h1>
+                                                                    <p class="p text-center">We patronize the animals
+                                                                        for their incompleteness, for their tragic fate
+                                                                        of having taken form so far below ourselves. And
+                                                                        therein we err, and greatly err. For the animal
+                                                                        shall not be measured by man. In a world older
+                                                                        and more complete than ours, they are more
+                                                                        finished and complete, gifted with extensions of
+                                                                        the senses we have lost or never attained,
+                                                                        living by voices we shall never hear. They are
+                                                                        not brethren, they are not underlings; they are
+                                                                        other Nations, caught with ourselves in the net
+                                                                        of life and time, fellow prisoners of the
+                                                                        splendour and travail of the earth.</p>
+                                                                    <h4>Kareem Mohamed<span>MANAGER</span></h4>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <h2 class="h1 text-center">Our Users Speack Volumes Us
+                                                                    </h1>
+                                                                    <p class="p text-center">The animals of the world
+                                                                        exist for their own reasons. They were not made
+                                                                        for humans any more than black people were made
+                                                                        for white, or women created for men.</p>
+                                                                    <h4>Kareem Mohamed<span>MANAGER</span></h4>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <h2 class="h1 text-center">Our Users Speack Volumes Us
+                                                                    </h1>
+                                                                    <p class="p text-center">We have doomed the wolf not
+                                                                        for what it is, but for what we deliberately and
+                                                                        mistakenly perceive it to be –the mythologized
+                                                                        epitome of a savage ruthless killer – which is,
+                                                                        in reality, no more than a reflected image of
+                                                                        ourself.</p>
+                                                                    <h4>Kareem Mohamed <span>MANAGER</span></h4>
+                                                            </div>
+                                                        </div>
+                                                        <a class="carousel-control-prev" href="#carouselExampleControls"
+                                                            role="button" data-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carouselExampleControls"
+                                                            role="button" data-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!--Meet With Price-->
+                                                <div id="Price" class="price">
+                                                    <h2 class="leader1">Sweet Paws Rescue
+                                                    </h2>
+                                                    <p class="leader">
+                                                        Our Mission: Sweet Paws Rescue rescues and rehomes dogs from
+                                                        Mississippi,
+                                                        Alabama and Massachusetts and works to improve legislation and
+                                                        awareness of dog rescue in these areas.
+                                                    </p>
+                                                    <button type="button" class="btn btn-danger btn-lg">DONATE
+                                                        NOW</button>
+
+                                                    <div class="container">
+                                                        <div class="row">
+
+                                                            <div class=" col-sm-4 col-md-4 col-xs-12">
+                                                                <img style="
+                                                                width: 365px;
+                                                                height: 365px; " src="./images/sandy.jpg" alt="">
+                                                                <h4 style=" margin: 15px; font-weight: bold;">SANDY</h4>
+                                                                <p style="    font-family: sofia-pro;
+                                                                font-weight: 500;
+                                                                font-style: normal;
+                                                                font-size: 21px;
+                                                                letter-spacing: .06em;
+                                                                line-height: 1.8em;
+                                                                text-transform: none;
+                                                                color: rgba(29,29,29,.7);">Our mission is to make the
+                                                                    best match for both the
+                                                                    dog or
+                                                                    puppy and their potential adopter.
+                                                                </p>
+                                                                <button type="button"
+                                                                    style="margin-top: 60px !important;"
+                                                                    class="btn btn-danger btn-lg">Learn More</button>
+                                                            </div>
+                                                            <div class=" col-sm-4 col-md-4 col-xs-12">
+                                                                <img style="
+                                                                width: 365px;
+                                                                height: 365px; " src="./images/spike.jpg" alt="">
+                                                                <h4 style=" margin: 15px; font-weight: bold;">Foster
+                                                                </h4>
+                                                                <p style="    font-family: sofia-pro;
+                                                                font-weight: 500;
+                                                                font-style: normal;
+                                                                font-size: 21px;
+                                                                letter-spacing: .06em;
+                                                                line-height: 1.8em;
+                                                                text-transform: none;
+                                                                color: rgba(29,29,29,.7);">
+                                                                    Offer your time, love, and attention to prep
+                                                                    a foster dog or puppy for adoption into a permanent
+                                                                    home.
+                                                                </p>
+                                                                <button type="button"
+                                                                    class="btn btn-danger btn-lg">Learn More</button>
+                                                            </div>
+                                                            <div class=" col-sm-4 col-md-4 col-xs-12">
+                                                                <img style="
+                                                                width: 365px;
+                                                                height: 365px; " src="./images/bear.jpg" alt="">
+                                                                <h4 style=" margin: 15px; font-weight: bold;">Volunteer
+                                                                </h4>
+                                                                <p style="    font-family: sofia-pro;
+                                                                font-weight: 500;
+                                                                font-style: normal;
+                                                                font-size: 21px;
+                                                                letter-spacing: .06em;
+                                                                line-height: 1.8em;
+                                                                text-transform: none;
+                                                                color: rgba(29,29,29,.7);">
+                                                                    SPR is looking for responsible, hardworking,
+                                                                    positive volunteers to add to our team!
+                                                                </p>
+                                                                <button type="button"
+                                                                    style="margin-top: 60px !important;"
+                                                                    class="btn btn-danger btn-lg">Learn More</button>
+                                                            </div>
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Posts-->
+                                                <!-- <div id="Blog" class="Posts">
+        <div class="container">
+        <h2>Latest Posts</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <div class="row">
+                <div class="POST col-md-4 col-sm-4 col-xs-12">
+                    <div class="equal text-left">
+                        <img class="img-bluid" alt="Responsive image" src="images/blog-image-1.jpg">
+                        <p class="lead"><a href="$">Whats Isthe Difference Between Good And Bat Typography</a></p>
+                        <h5><span>05, juin 2017</span><a > Read More</a></h5>
+                    </div>
+                </div>
+                <div class="POST col-md-4 col-sm-4 col-xs-12">
+                    <div class="equal text-left">
+                        <img class="img-bluid" alt="Responsive image" src="images/blog-image-2.jpg">
+                        <p class="lead"><a href="$">Whats Isthe Difference Between Good And Bat Typography</a></p>
+                        <h5><span>05, juin 2017</span><a > Read More</a></h5>
+                    </div>
+                </div>
+                <div class="POST col-md-4 col-sm-4 col-xs-12">
+                    <div class="equal text-left">
+                        <img class="img-bluid" alt="Responsive image" src="images/blog-image-3.jpg">
+                        <p class="lead"><a href="$">Whats Isthe Difference Between Good And Bat Typography</a></p>
+                        <h5><span>05, juin 2017</span><a > Read More</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div> -->
+                                                <!--backfround image-->
+
+                                                <div class="static text-center  ">
+                                                    <div class="stat">
+
+                                                        <div class="container">
+
+
+                                                            <div class="row">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--contant-->
+                                                <div class="conect" id="Contact">
+                                                    <h2>Contact</h2>
+                                                    <p class="lead">Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit
+                                                        Voluptatem Accusantium
+                                                        Doloremque</p>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="color text-left col-md-6 col-sm-4 col-xs-12">
+                                                                <ul class="list-unstyled">
+                                                                    <li><i
+                                                                            class="text-left fas fa-map-marker-alt"></i>A108
+                                                                        Adam Street New
+                                                                        York, NY 535022</li>
+                                                                    <li><i
+                                                                            class="text-left fas fa-envelope"></i>Kareem@gmail.com
+                                                                    </li>
+                                                                    <li><i
+                                                                            class="text-left fas fa-phone"></i>01271349443
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="linkes">
+
+                                                                    <i class="fab fa-twitter"></i>
+                                                                    <i class="fab fa-facebook"></i>
+                                                                    <i class="fab fa-instagram"></i>
+                                                                    <i class="fab fa-google-plus-square"></i>
+                                                                    <i class="fab fa-linkedin"></i>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-4 col-xs-12">
+                                                                <div class="form-area">
+                                                                    <form role="form">
+                                                                        <br style="clear:both">
+                                                                        <h3
+                                                                            style="margin-bottom: 25px; text-align: center;">
+                                                                            Contact Form</h3>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="name" name="name" placeholder="Name"
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="email" name="email"
+                                                                                placeholder="Email" required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="mobile" name="mobile"
+                                                                                placeholder="Mobile Number" required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="subject" name="subject"
+                                                                                placeholder="Subject" required>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <textarea class="form-control"
+                                                                                type="textarea" id="message"
+                                                                                placeholder="Message" maxlength="140"
+                                                                                rows="7"></textarea>
+
+                                                                        </div>
+
+                                                                        <button type="button" id="submit" name="submit"
+                                                                            class="btn btn-primary pull-right">Submit
+                                                                            Form</button>
+                                                                    </form>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--header-->
+                                                <div class="footer">
+                                                    <div class="b text-center">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class=" text-left col-md-4 col-sm-4 col-xs-12">
+                                                                    <h3>eSTRAP</h3>
+                                                                    <p class="lead">Sed Ut Perspiciatis Unde Omnis Iste
+                                                                        Natus Error Sit
+                                                                        Voluptatem Accusantium Doloremque</p>
+                                                                </div>
+                                                                <div class=" text-left col-md-2 col-sm-4 col-xs-12">
+                                                                    <h3>ABOU US</h3>
+                                                                    <ul class="FONT list-unstyled">
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class=" text-left col-md-2 col-sm-4 col-xs-12">
+                                                                    <h3>ABOU US</h3>
+                                                                    <ul class="FONT list-unstyled">
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class=" text-left col-md-2 col-sm-4 col-xs-12">
+                                                                    <h3>ABOU US</h3>
+                                                                    <ul class="FONT list-unstyled">
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class=" text-left col-md-2 col-sm-4 col-xs-12">
+                                                                    <h3>SUPPORT</h3>
+                                                                    <ul class="FONT list-unstyled">
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <li>Palo Protection</li>
+                                                                        </a>
+                                                                    </ul>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="Copyrights">© Copyrights eStartup. All rights reserved.
+                                                    </p>
+                                                    <p>Design By <a
+                                                            href="https://plus.google.com/u/0/117050015621650104751"><span
+                                                                class="my_name">KAREEM MOHAMED</span></a></p>
+                                                    <div>
+                                                        <!--bootstrab link-->
+                                                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                                                            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                                                            crossorigin="anonymous"></script>
+                                                        <script
+                                                            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                                                            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                                                            crossorigin="anonymous"></script>
+                                                        <script
+                                                            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                                                            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                                                            crossorigin="anonymous"></script>
+                                                        <!--test java-->
+                                                        <script
+                                                            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                                                        <script> $('p').marquee(); </script>
+</body>
+
+</html>
